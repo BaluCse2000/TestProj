@@ -21,7 +21,7 @@ namespace testproj3
             string responseBody = await response.Content.ReadAsStringAsync();
             JObject obj = JObject.Parse(responseBody);
             Console.WriteLine(obj.GetValue("repository"));
-            Console.ReadLine();
+           // Console.ReadLine();
         }
     }
 }
